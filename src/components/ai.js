@@ -1,5 +1,5 @@
 const API=import.meta.env.VITE_GEMINY_API
-console.log(API);
+
 
 async function GetRecipy(names){
     const prompt=`
