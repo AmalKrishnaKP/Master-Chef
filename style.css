@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    line-height: 30px;
+    background-color: linear-gradient(red, yellow);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding: 5px; */
+    border-radius: 10px;
+    /* overflow: hidden; */
+    
+    height: 500%;
+    display: flex;
+    justify-content: center;
+}
+ul{
+    padding-left: 30px;
+}
+#root{
+    overflow: hidden;
+    width: 593px;
+    /* border: solid black;
+    border-radius: 10px; */
+    background-color: rgb(255, 247, 237);
+    min-height:300px;
+    
+
+}
+.header{
+    background-color: white;
+    /* border:.5px black solid; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.10),0px 1px 2px 0px rgba(0,0,0,0.06);
+}
+.header_img{
+    width: 40px;
+}
+.header_text{
+    font-weight: 500;
+}
+main{
+    
+    padding: 30px;
+    /* overflow: hidden;
+    overflow:scroll; */
+   
+}
+.increadientForm{ 
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 10px;    
+}
+.increadientForm > input{
+    min-width: 100px;
+    max-width: 400px;
+    flex-grow: 1;
+    border-radius: 5px;
+    border:solid .4px rgb(96, 96, 96);
+    
+}
+
+.increadientForm > input{
+    color: black;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.increadientForm > button{   
+    padding: 7px 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+ }
+ .increadientForm > button::before{
+    content:"+";
+    margin-right: 6px;
+ }
+section h2{
+    margin-top: 15px;
+
+}
+.increadience-list{
+    margin-top: 15px;
+    padding-left: 35px;
+ }
+
+.get-recipy-container{
+    margin-top: 18px;
+    padding: 15px 20px;
+    background-color: rgb(232, 211, 185);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+.get-recipy-container p{
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(87, 86, 86);
+}
+
+.generate{
+    background-color: brown;
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 4px 10px 7px 10px;
+    color: white;
+    border-style: none;
+}
+.suggested-recipe-container {
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.suggested-recipe-container > ul,ol{
+    padding-left: 30px;
+}
