@@ -76,7 +76,7 @@ main{
     background-color: black;
     color: white;
     font-weight: 500;
-    line-height: 10px;
+    line-height: 20px;
  }
  .increadientForm > button::before{
     content:"+";
