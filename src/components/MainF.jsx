@@ -6,13 +6,15 @@ import { ToggleGetRecipe } from "./ai";
 export default function MainF(){
     const [items,setItems]=React.useState([])
     const [recipy,setrecipy]=React.useState("")
+    const recitySection=React.useRef(null)
     
     console.log(recipy);
+    console.log(recitySection);
     
     async function generate(){
         const recipy=await ToggleGetRecipe(items)
         setrecipy(recipy)
-        await getRecipy(!recipyShown)
+        // await getRecipy(!recipyShown)
         
     }
     // console.log(items[0]);   
@@ -58,6 +60,7 @@ export default function MainF(){
                 <button type="submit">Add increadinace</button>
             </form>
             <IncredianceList 
+                ref={recitySection}
                 generate={generate}
                 items={items}
             />

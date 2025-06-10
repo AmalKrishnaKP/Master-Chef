@@ -14,7 +14,7 @@ export default function IncredianceList(props){
                 {
                     props.items.length >3 &&
                     <div className="get-recipy-container">
-                        <div>
+                        <div ref={props.ref}>
                             <h4>Ready for a recipy?</h4>
                             <p>Generate a recipy from the list of items</p>
                         </div>
