@@ -19,7 +19,14 @@ export default function IncredianceList(props){
                             <p>Generate a recipy from the list of items</p>
                         </div>
                         <button className="generate" onClick={props.generate}>generate</button>
+                        
                     </div>
+                    
+                }
+                {
+                            props.click?
+                            <h1>Generating Recipy....</h1>:
+                            null
                 }
             </section>
     )

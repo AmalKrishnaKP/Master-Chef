@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ClaudeRecipe from "./ClaudeRecipe";
 import IncredianceList from "./IncredianceList";
 import { ToggleGetRecipe } from "./ai";
@@ -7,16 +7,22 @@ export default function MainF(){
     const [items,setItems]=React.useState([])
     const [recipy,setrecipy]=React.useState("")
     const recitySection=React.useRef(null)
+    const [click,setClick]=useState(true)
     
     console.log(recipy);
     console.log(recitySection);
     
     async function generate(){
+        setClick(!click)
         const recipy=await ToggleGetRecipe(items)
         setrecipy(recipy)
         // await getRecipy(!recipyShown)
+
         
     }
+    useEffect(()=>{
+        setClick(!click)
+    },[recipy])
     // console.log(items[0]);   
     
     
@@ -63,6 +69,7 @@ export default function MainF(){
                 ref={recitySection}
                 generate={generate}
                 items={items}
+                click={click}
             />
             {
                 recipy &&
